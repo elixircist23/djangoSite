@@ -12,7 +12,7 @@ from .views import (
 urlpatterns = [
 	url(r'^$', "posts.views.posts_list"),
     url(r'^create/$', "posts.views.posts_create"),
-    url(r'^detail/$', "posts.views.posts_detail"),
+    url(r'^detail/(?P<id>\d)$', "posts.views.posts_detail"),
     url(r'^update/$', "posts.views.posts_update"),
     url(r'^delete/$', "posts.views.posts_delete"),
 	]
