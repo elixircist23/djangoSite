@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h1 align="center">{{ title }} is working!</h1>
+	<div align="center">
+		{%if q_length != 0%}
+			{% for obj in object_list %}
+			{{obj.title}}  <pre>     Post Time:{{obj.timestamp}}<br/></pre>
+			{{obj.content}}<br/>
+			{{obj.id}}<br/>
+			<br/><br/>
+			<hr>
+			{%endfor%}
+		{%else%}
+			<p>OH NO! NO POSTS :(</p>>	
+		{%endif%}
+	</div>
+</body>
+</html>
